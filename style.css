@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --title-font: "Oxanium", Helvetica, Arial, sans-serif;
+    --body-font: "Manrope", Helvetica, Arial, sans-serif;
+
+}
+
+header {
+    background: url(https://renode.space/images/background/6.webp);
+    background-color: #1e1e24;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+
+.banner {
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.banner h1 {
+    font-size: 44px;
+    color: white;
+    font-family: var(--title-font);
+}
+
+.banner p {
+    width: 495px;
+    color: #9C9C9C;
+    font-size: 14px;
+    line-height: 24px;
+    margin-top: 10px;
+    font-family: var(--body-font);
+}
+
+.banner a {
+    display: block;
+    width: fit-content;
+    text-decoration: none;
+    font-family: var(--title-font);
+
+    padding: 21px 70px;
+    border-radius: 4px;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    background: linear-gradient(to right, #5623d8, #6a79fa);
+    transition: .3s;
+}
+.banner a:hover {
+    -webkit-box-shadow: 0 0 40px 0px rgba(86, 35, 216, 1);
+    -moz-box-shadow: 0 0 40px 0px rgba(86, 35, 216, 1);
+    box-shadow: 0 0 40px 0px rgba(86, 35, 216, 1);
+}
+
+.banner img {
+    max-height: 350px;
+    width: auto;
+
+}
+
+@media screen and (max-width:1000px) {
+    h1{
+        font-size: 24px !important; 
+        width: fit-content;
+        margin: auto;
+
+    }
+    p{
+
+        display: none;
+    }
+    .banner > div{
+        width: fit-content;
+        width: 100%;
+        margin: 0 auto !important;
+    }
+    .banner a{
+        margin:50px auto;
+        padding: 11px 30px;
+
+    }
+    .banner img{
+        max-width: calc(70% );
+
+    }
+    .banner {
+        margin: auto !important;
+        align-items: center;
+        padding: 0;
+        flex-direction: column-reverse;
+        gap:50px;
+        max-width: calc(100% - 50px);
+        margin: auto 0 ;
+    }
+}
